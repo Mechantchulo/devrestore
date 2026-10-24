@@ -8,7 +8,25 @@ Ubuntu, Debian and Fedora are recognized and supported for the allowlisted APT/D
 
 ## Install
 
-Python 3.11 or newer is required. From a copy of this project, install the command with pipx:
+Python 3.11 or newer is required.
+
+### Test release from TestPyPI
+
+[DevRestore 0.1.0 on TestPyPI](https://test.pypi.org/project/devrestore/0.1.0/) is available for testing. Install the command with pipx; the extra index lets pipx fetch dependencies from PyPI when they are not on TestPyPI:
+
+```bash
+pipx install --index-url https://test.pypi.org/simple/ \
+  --pip-args="--extra-index-url https://pypi.org/simple/" \
+  'devrestore==0.1.0'
+pipx ensurepath
+devrestore --help
+```
+
+Open a new terminal if `pipx ensurepath` asks you to. This is a test release, not yet a production PyPI release.
+
+### Install from a project checkout
+
+From a copy of this project, install the command with pipx:
 
 ```bash
 pipx install .
@@ -16,7 +34,7 @@ pipx ensurepath
 devrestore --help
 ```
 
-Open a new terminal if `pipx ensurepath` asks you to. For an editable development install instead:
+For an editable development install instead:
 
 ```bash
 python3 -m venv .venv
