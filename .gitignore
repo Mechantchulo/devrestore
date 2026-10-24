@@ -1,0 +1,67 @@
+# Local Python environments and build output
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test, type-check, and documentation caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+site/
+
+# Local DevRestore profiles, exports, and connection settings
+/devrestore/profiles/
+/devrestore/github.json
+/profiles/
+/*.yaml
+/*.yml
+/.local/
+/.config/
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+.envrc
+.pypirc
+.netrc
+.npmrc
+pip.conf
+pip.ini
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+.gnupg/
+.kube/
+.docker/
+.gh/
+.codex/
+.agents/
+
+# Editor, OS, and temporary files
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.log
+*.tmp
+
